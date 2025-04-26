@@ -1,9 +1,15 @@
-import example.pepita
+import ejercicioJorge.*
 
-describe "group of tests for pepita" {
+describe "group of tests for jorge" {
 
-  test "pepita has initial energy" {
-    assert.equals(100, pepita.energy())
+  test "jorge existe y su alegria inicial es 10" {
+    assert.equals(10, jorge.alegria())
   }
+
+  test "san lorenzo gana y jorge se alegra" {
+    sanLorenzo.gana()
+    assert.equals(11, jorge.alegria())
+  }
+
 
 }
